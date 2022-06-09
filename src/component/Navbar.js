@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
-
-import "../../style/nav.scss";
-const Nav = () => {
+import "../style/navbar.scss";
+const Navbar = () => {
   return (
-    <nav>
-      <Link to="/">
-        <h1>Voucher Hunter</h1>
+    <div className="navbar-container">
+      <Link to="/" className="title">
+        Vouchers Hunter
       </Link>
       <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
         <li>
           <Link to="/products">Products</Link>
         </li>
@@ -18,7 +20,7 @@ const Nav = () => {
           <Link to="/about">About Us</Link>
         </li>
       </ul>
-    </nav>
+    </div>
   );
 };
-export default Nav;
+export default Navbar;

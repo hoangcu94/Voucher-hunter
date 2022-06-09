@@ -1,0 +1,29 @@
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:#eaeced;
+    // .slide-container {
+    //     min-height: 380px;
+    //     border: 1px solid #ccc;
+    //     display: flex;
+    //     justify-content:center;
+    //     align-items: center;
+    //     color: rgb(15, 15, 15);
+
+    // }
+    .vouchers {
+        display: flex;
+        flex-direction: row;
+     
+        padding-left:  30px;
+        margin-top: 5px;
+
+        .voucher-items {
+        width: 70%;
+        }
+        .list-news {
+        width: 30%;
+        }
+    }
+}

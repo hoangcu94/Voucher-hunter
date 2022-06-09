@@ -1,5 +1,4 @@
 const NotFound = () => {
-  return <h2> File not found</h2>;
+  return <h1>404</h1>;
 };
-
 export default NotFound;

@@ -1,0 +1,30 @@
+.news-container {
+    padding-left: 10px;
+    background-color: white;
+    border-radius: 7px;
+    margin-left: 10px;
+    .title {
+        color: #66bbe2;
+        width: 100%;
+        border-bottom: 3px solid #66bbe2;
+
+    }
+    .news-list-card {
+        display: flex;
+        flex-direction: column;
+        color: #111111;
+        justify-content:center;
+        align-items: center;
+        .item-card {
+            width: 90%;
+            margin-bottom: 5px;
+            h5 {
+                padding-left:5px;
+            };
+        }
+        .item-card:hover {
+        color: RGB(21, 205, 114);
+        // color: #4751e6;
+        }
+    }
+}

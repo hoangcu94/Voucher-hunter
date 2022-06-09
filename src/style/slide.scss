@@ -1,0 +1,43 @@
+.slide-container {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    // background-color:#ffffff;
+
+    button {
+        border: 1px solid #ccc;
+        padding:10px 20px;
+        margin: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: rgb(122, 166, 233);
+        border-radius : 5px;
+        border: 1px solid black;
+    }
+    bottom:hover {
+        background-color: rgb(94, 153, 241);
+        color : rgb(226, 43, 43);
+    }
+    .item-card {
+        margin: 10px 0;
+        overflow: hidden;
+        border-radius: 5px;
+
+        img {
+            width: 600px;
+            height: 380px;
+        }
+
+        .item-title {
+            flex : 1;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 5px 10px;
+            margin: 0;
+            background-color: rgb(119, 68, 68)
+        }
+    }
+}

@@ -1,20 +1,20 @@
-import Nav from "./components/navbar/Nav";
-import Footer from "./components/footer/Footer";
 import { Routes, Route } from "react-router-dom";
-import Homepage from "./pages/homepage/Homepage";
-import Products from "./pages/products/Products";
-import News from "./pages/news/News";
-import About from "./pages/about/About";
-import NotFound from "./components/notfound/NotFound";
-
+import Navbar from "./component/Navbar";
+import Homepage from "./component/Homepage";
+import Products from "./component/Products";
+import News from "./component/News";
+import About from "./component/About";
+import NotFound from "./component/NotFound";
+import Footer from "./component/Footer";
 import "./App.scss";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Nav />
-      </header>
-      <body className="App-body">
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <div className="App-body">
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/products" element={<Products />} />
@@ -22,10 +22,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
-      </body>
-      <footer className="App-footer">
+      </div>
+      <div>
         <Footer />
-      </footer>
+      </div>
     </div>
   );
 }
